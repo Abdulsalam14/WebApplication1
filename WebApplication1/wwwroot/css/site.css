@@ -1,0 +1,65 @@
+﻿*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+
+h1{
+    margin-bottom:50px;
+    text-align:center;
+}
+
+h2{
+    margin-top:10px;
+    margin-bottom:20px;
+}
+
+h3{
+    margin-bottom:10px;
+}
+
+
+.drinks{
+    border :1px solid deepskyblue;
+    margin-bottom:20px
+}
+
+.drinks h2{
+    color:deepskyblue;
+}
+
+.drinks div{
+    margin-bottom:10px;
+    border:1px solid #e8e8e8;
+
+}
+
+
+.fastfoods{
+    border: 1px solid cadetblue;
+    margin-bottom:20px;
+}
+
+.fastfoods h2 {
+    color: cadetblue;
+}
+
+.fastfoods div{
+    margin-bottom: 10px;
+    border:1px solid #e8e8e8;
+}
+
+.hotmeals {
+    border: 1px solid orangered;
+    margin-bottom: 20px;
+}
+
+.hotmeals h2 {
+    color: orangered;
+}
+
+.hotmeals div {
+    margin-bottom: 20px;
+    border: 1px solid #e8e8e8
+}

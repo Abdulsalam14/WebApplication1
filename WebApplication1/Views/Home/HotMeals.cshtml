@@ -1,0 +1,29 @@
+﻿@model WebApplication1.Models.HotMealsViewModel
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <link rel="stylesheet" type="text/css" href="/css/site.css" />
+</head>
+<body>
+    <h1 style="color:orangered">HotMeals</h1>
+
+    <div class="hotmeals">
+        @foreach (var item in Model.Hotmeals)
+        {
+            <div>
+                <h3>Id:@item.Id</h3>
+                <h3>Name:@item.Name</h3>
+                <h3>Price:@item.Price</h3>
+                <h3>Description:@item.Description</h3>
+            </div>
+        }
+    </div>
+
+
+
+</body>
+</html>

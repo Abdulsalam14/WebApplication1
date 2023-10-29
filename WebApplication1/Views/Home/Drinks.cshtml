@@ -1,0 +1,28 @@
+﻿@model WebApplication1.Models.DrinksViewModel
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <link rel="stylesheet" type="text/css" href="/css/site.css" />
+</head>
+<body>
+        <h1 style="color:deepskyblue">Drinks</h1>
+
+    <div class="drinks">
+        @foreach (var item in Model.drinks)
+        {
+            <div>
+                <h3>Id:@item.Id</h3>
+                <h3>Name:@item.Name</h3>
+                <h3>Price:@item.Price</h3>
+            </div>
+        }
+    </div>
+
+
+
+</body>
+</html>

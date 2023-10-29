@@ -1,0 +1,64 @@
+﻿@model WebApplication1.Models.HomeViewModel
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <link rel="stylesheet" type="text/css" href="/css/site.css" />
+</head>
+<body>
+
+
+    <div class="drinks">
+        <h2>Drinks</h2>
+        @foreach (var item in Model.Drinks)
+        {
+            <div>
+                <h3>Id:@item.Id</h3>
+                <h3>Name:@item.Name</h3>
+                <h3>Price:@item.Price</h3>
+            </div>
+        }
+    </div>
+
+
+
+    <div class="hotmeals">
+
+        <h2>HotMeals</h2>
+
+        @foreach (var item in Model.Hotmeals)
+        {
+            <div>
+                <h3>Id:@item.Id</h3>
+                <h3>Name:@item.Name</h3>
+                <h3>Price:@item.Price</h3>
+                <h3>Description:@item.Description</h3>
+            </div>
+        }
+
+    </div>
+
+
+    <div class="fastfoods">
+        <h2>FastFoods</h2>
+        @foreach (var item in Model.FastFoods)
+        {
+            <div>
+                <h3>Id:@item.Id</h3>
+                <h3>Name:@item.Name</h3>
+                <h3>Price:@item.Price</h3>
+                <h3>Calory:@item.Calory</h3>
+            </div>
+        }
+    </div>
+
+
+
+
+
+
+</body>
+</html>
